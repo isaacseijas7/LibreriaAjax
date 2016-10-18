@@ -31,12 +31,12 @@
 					type: 'GET',
 					url: destino.plantilla,
 					loading: function(){
-						self.marco.innerHTML = 'Cargando...';
+						self.marco.innerHTML = 'Cargando vista...';
 					},
 					success: function(datos){
 						self.marco.innerHTML = datos;
 
-						if (typeof self.rutas[hash].cargar=== 'function' ) {
+						if (typeof self.rutas[hash].cargar === 'function' ) {
 							self.rutas[hash].cargar();	
 						}
 
